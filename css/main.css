@@ -27,6 +27,7 @@ body .siteTitle {
     margin: 0;
     background: none;
     border: none;
+    display:flex;
 }
 
 .colorPicker .oned {
