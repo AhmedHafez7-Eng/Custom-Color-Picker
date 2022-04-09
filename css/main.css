@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EEE;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+body .siteTitle {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 30px;
+    background-color: inherit;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    color: #333;
+}
+
+.colorPicker {
+    margin: 0;
+    background: none;
+    border: none;
+}
+
+.colorPicker .oned {
+    margin-right: 0;
+}
+
+.container {
+    display: flex;
+    /* width: 700px; */
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 780px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.config {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.config .config-title {
+    text-align: center;
+    padding: 15px 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.config .config-title p {
+    font-size: 11px;
+    margin-top: 5px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #555;
+}
+
+.selected-color-text {
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.selected-color,
+.saved-color {
+    height: 15px;
+    border: 1px solid #EEE;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.saved-color:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.saved-color {
+    text-align: center;
+    font-size: 11px;
+    color: #FFF;
+}
+
+.hoveredColor {
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    font-size: 11px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.hovered {
+    margin-top: 7px;
+    text-align: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    padding: 10px 0;
+}
+
+.footer {
+    letter-spacing: 7px;
+    font-family: monospace;
+    padding: 10px;
+    background-color: inherit;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    color: #333;
+}
